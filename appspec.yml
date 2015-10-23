@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /src/main/webapp/welcome.jsp
+  - source: /src/main/webapp/index.html
     destination: /var/www/html/
 hooks:
   BeforeInstall:
