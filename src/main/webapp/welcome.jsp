@@ -8,6 +8,6 @@
 </head>
 <body style="background-color: #eee;">
 		<h2 style="text-align: center">Welcome to Code Deploy Demo</h2>
-		<h3 style="text-align: center">Web application built and deployed by Jenkins - Changed</h3>
+		<h3 style="text-align: center">Web application built and deployed by Jenkins</h3>
 </body>
 </html>
