@@ -1,14 +1,30 @@
-version: 0.0
-os: linux
-files:
--source: /
+--- 
+? "-object"
+: /usr/share/tomcat7/webapps
+? "-source"
+: /
+acls: 
+  - "d:u::rwx"
+  - "d:g::rwx"
+  - "d:o::rwx"
 destination: /usr/share/tomcat7/webapps
-hooks:
-  BeforeInstall:
-    - location: source/scripts/before-install.sh    
+files: ~
+hooks: 
+  AfterInstall: 
+    - 
+      location: source/scripts/after-install.sh
       runas: root
-    - location: source/scripts/stop-server.sh
-      runas: root	
-  AfterInstall:
-    - location: source/scripts/after-install.sh
+  BeforeInstall: 
+    - 
+      location: source/scripts/before-install.sh
       runas: root
+    - 
+      location: source/scripts/stop-server.sh
+      runas: root
+mode: 644
+os: linux
+owner: ec2-user
+permissions: ~
+type: 
+  - directory
+version: 0.0
