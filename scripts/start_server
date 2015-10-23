@@ -1,4 +1,4 @@
 #!/bin/bash
+
 service tomcat7 start
-#cp -R /var/deployment/* /usr/share/tomcat7/webapps
 
