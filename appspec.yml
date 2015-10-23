@@ -1,8 +1,8 @@
 version: 0.0
 os: linux
 files:
-  - source: /src/main/webapp/index.html
-    destination: /var/www/html/latest/
+  - source: /src/main/webapp/
+    destination: /var/deployment/
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies
