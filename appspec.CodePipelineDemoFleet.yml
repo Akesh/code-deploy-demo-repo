@@ -1,14 +1,14 @@
 version: 0.0
 os: linux
 files:
--source: /opt
+-source: /target/ROOT.war
 destination: /usr/share/tomcat7/webapps
 hooks:
   BeforeInstall:
-    - location: scripts/before-install.sh    
+    - location: source/scripts/before-install.sh    
       runas: root
-    - location: scripts/stop-server.sh
+    - location: source/scripts/stop-server.sh
       runas: root	
   AfterInstall:
-    - location: scripts/after-install.sh
+    - location: source/scripts/after-install.sh
       runas: root
