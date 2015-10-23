@@ -1,1 +1,2 @@
+rm -r /usr/local/tomcat/webapps/*
 cp -R /var/deployment/* /usr/share/tomcat7/webapps
