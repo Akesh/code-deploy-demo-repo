@@ -1,0 +1,1 @@
+cp -R /var/deployment/* /usr/share/tomcat7/webapps
