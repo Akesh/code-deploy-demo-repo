@@ -7,7 +7,7 @@
 <title>Welcome</title>
 </head>
 <body style="background-color: #eee;">
-		<h2 style="text-align: center">Welcome to Code Deploy Demo</h2>
-		<h3 style="text-align: center">Web application built and deployed by Jenkins</h3>
+		<h2 style="text-align: center">Welcome to Code pipeline Demo</h2>
+		<h3 style="text-align: center">Web application synced by Code Pipeline, built by jenkins and deployed by Code Deploy</h3>
 </body>
 </html>
